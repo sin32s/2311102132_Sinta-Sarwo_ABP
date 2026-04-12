@@ -1,0 +1,83 @@
+/* style.css */
+:root {
+    --bg-darkest: #06141B;
+    --bg-card: #11212D;
+    --accent-hover: #253745;
+    --accent-main: #4A5C6A;
+    --text-muted: #9BA8AB;
+    --text-light: #CCD0CF;
+}
+
+body {
+    background-color: var(--bg-darkest);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Custom Navbar */
+.navbar-custom {
+    background-color: var(--bg-card);
+    border-bottom: 2px solid var(--accent-hover);
+}
+.navbar-custom .navbar-brand, .navbar-custom .nav-link {
+    color: var(--text-light) !important;
+}
+.navbar-custom .nav-link:hover {
+    color: var(--text-muted) !important;
+}
+
+/* Holder Foto Profil */
+.profile-placeholder {
+    width: 220px;            
+    height: 220px;           
+    border-radius: 50%;      
+    
+    object-fit: cover;       
+    object-position: top; 
+
+    /* Desain Bingkai */
+    border: 5px solid var(--bg-card);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    display: block;          
+    transition: 0.3s;
+}
+
+.profile-placeholder:hover {
+    transform: scale(1.05);  
+    border-color: var(--accent-main);
+}
+
+/* Custom Cards */
+.custom-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--accent-hover);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-main);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.custom-card .text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Tombol dan Badge */
+.btn-custom {
+    background-color: var(--accent-main);
+    color: var(--text-light);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.btn-custom:hover {
+    background-color: var(--text-muted);
+    color: var(--bg-darkest);
+}
+.badge-custom {
+    background-color: var(--accent-hover);
+    color: var(--text-light);
+}
