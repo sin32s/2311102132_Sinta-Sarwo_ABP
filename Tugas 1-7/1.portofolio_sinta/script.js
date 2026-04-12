@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Load Data via AJAX
     $.ajax({
         url: 'controller.php?action=get_data',
         type: 'GET',
@@ -42,10 +41,14 @@ $(document).ready(function() {
             // Populate Education
             let eduHtml = '';
             data.education.forEach(ed => {
+                let certHtml = ed.cert ? `<img src="${ed.cert}" class="cert-preview" alt="Sertifikat ${ed.title}">` : '';
+                let hoverClass = ed.cert ? 'has-cert' : '';
+
                 eduHtml += `
-                    <div class="cv-item">
+                    <div class="cv-item ${hoverClass}">
                         <h4>${ed.title}</h4>
                         <p>${ed.inst} (${ed.period})</p>
+                        ${certHtml}
                     </div>`;
             });
             $('#edu-list').html(eduHtml);

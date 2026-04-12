@@ -12,7 +12,7 @@
     
     <nav>
         <div class="container nav-flex">
-            <div class="logo">SINTA<span>SARWO</span></div>
+            <div class="logo">PORTO<span>FOLIO</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Portfolio</a></li>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="skill-card">
                     <h4>Soft Skills</h4>
-                    <p>Fasih Berbahasa Inggris, Public Speaking, Kepemimpinan Internasional.</p>
+                    <p> <i>Fluent English, Public Speaking</i>, Kepemimpinan Internasional.</p>
                 </div>
             </div>
         </section>

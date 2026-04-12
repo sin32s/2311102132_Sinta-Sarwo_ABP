@@ -25,10 +25,30 @@ $data = [
         ]
     ],
     "education" => [
-        ["title" => "S1 Teknik Informatika", "inst" => "Telkom University Purwokerto", "period" => "2023 - Sekarang"],
-        ["title" => "International Science & Invention Fair (ISIF) 2025", "inst" => "ISIF, Bali (Online)", "period" => "2025"],
-        ["title" => "Global Project-Based Learning", "inst" => "Suranaree University of Technology, Thailand", "period" => "2025"],
-        ["title" => "Virtual Assistant Certification", "inst" => "SGB VA Course", "period" => "2024"]
+        [
+            "title" => "S1 Teknik Informatika", 
+            "inst" => "Telkom University Purwokerto", 
+            "period" => "2023 - Sekarang",
+            "cert" => null
+        ],
+        [
+            "title" => "International Science & Invention Fair (ISIF) 2025", 
+            "inst" => "ISIF, Bali (Online)", 
+            "period" => "2025",
+            "cert" => "assets/ISIF_Certificate.jpeg"
+        ],
+        [
+            "title" => "Global Project-Based Learning", 
+            "inst" => "Suranaree University of Technology, Thailand", 
+            "period" => "2025",
+            "cert" => "assets/SUT_gPBL.png" 
+        ],
+        [
+            "title" => "Virtual Assistant Certification", 
+            "inst" => "SGB VA Course", 
+            "period" => "2024",
+            "cert" => "assets\VA_Certificate.png"
+        ]
     ],
     "projects" => [
         [
@@ -37,7 +57,7 @@ $data = [
             "tag" => "GOLD MEDAL ISIF 2025 & HKI",
             "role" => "Visual Strategist & Communication Lead",
             "desc" => "Platform AI untuk pengasahan logika berpikir kritis.",
-            "detail" => "Berperan sebagai penerjemah teknis; mengubah logika sistem AI yang kompleks menjadi narasi visual dan dokumentasi yang dipahami juri internasional, membawa tim meraih Medali Emas di ISIF 2025.",
+            "detail" => "Berkolaborasi dengan 5 teman dalam kompetisi ISIF 2025, di mana saya berperan sebagai penerjemah teknis. Mengubah logika sistem AI yang kompleks menjadi narasi visual dan dokumentasi yang dipahami juri internasional, membawa tim meraih Medali Emas di ISIF 2025.",
             "tech" => ["AI Analysis", "Technical Visual", "HKI"],
             "img" => "assets/LogiCheck.png"
         ],
@@ -45,7 +65,7 @@ $data = [
             "id" => "solusam",
             "title" => "SoluSam",
             "tag" => "HKI CERTIFIED",
-            "role" => "Lead Developer & System Designer",
+            "role" => "Project Manager & System Designer",
             "desc" => "Digitalisasi operasional bank sampah untuk pengepul.",
             "detail" => "Merancang alur kerja sistem menggunakan CodeIgniter 4. Mengimplementasikan logika 'Delete and Re-create' untuk memastikan sinkronisasi data yang absolut dan mencegah redundansi pada laporan pengepul.",
             "tech" => ["CodeIgniter 4", "System Design", "HKI"],
@@ -57,27 +77,27 @@ $data = [
             "tag" => "INTERNSHIP 2026",
             "role" => "System Analyst",
             "desc" => "Sistem reservasi kendaraan dan ruang rapat terintegrasi.",
-            "detail" => "Menganalisis birokrasi kantor untuk menciptakan sistem reservasi yang efisien. Merancang skema Access Control List (ACL) mendalam untuk proteksi data akun.",
+            "detail" => "Berkolaborasi dengan ke-2 teman saat magang pada DPMPTSP, Kami diberi jobdesk untuk menganalisis birokrasi kantor untuk menciptakan sistem reservasi yang efisien. Sayan berperan Merancang skema Sistem secara keseluruhan dan juga Access Control List (ACL) mendalam untuk proteksi data akun pada sistem SIPERKAT.",
             "tech" => ["ACL Design", "PHP", "MySQL"],
             "img" => "assets/Siperkat.jpeg"
         ],
         [
             "id" => "edulink",
             "title" => "EduLink",
-            "tag" => "CAMPUS FUNDED",
-            "role" => "System Analyst & UI/UX Designer",
-            "desc" => "Platform kolaborasi pengembangan kompetensi guru.",
-            "detail" => "Melakukan analisis sistem mendalam menggunakan UML (Activity, Class, dan Use Case Diagram) untuk memastikan skalabilitas platform.",
-            "tech" => ["UML Analysis", "UI/UX Design"],
+            "tag" => "Most Likely to be Funded by Campus",
+            "role" => "System Analyst",
+            "desc" => "Platform kolaborasi dalam edukasi & pengembangan kompetensi guru.",
+            "detail" => "Berkolaborasi dengan 4 orang lain dan melakukan analisis sistem mendalam menggunakan UML (Activity, Class, dan Use Case Diagram) untuk memastikan skalabilitas platform.",
+            "tech" => ["UML Analysis"],
             "img" => "assets/EduLink.png"
         ],
         [
             "id" => "cflix",
             "title" => "CFlix",
             "tag" => "HKI CERTIFIED",
-            "role" => "Backend Developer",
+            "role" => "Algoritma Analis",
             "desc" => "Aplikasi streaming film berbasis C++.",
-            "detail" => "Mengembangkan struktur data array dan algoritma searching yang dioptimasi untuk kecepatan akses data film. Proyek ini telah dipatenkan melalui HKI.",
+            "detail" => "Berkolaborasi dengan 2 teman kelas, kami mengembangkan struktur data array dan algoritma searching yang dioptimasi untuk kecepatan akses data film.",
             "tech" => ["C++", "Algorithm", "HKI"],
             "img" => "assets/CFlix.png"
         ]

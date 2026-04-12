@@ -255,3 +255,41 @@ footer { text-align: center;
     color: var(--dim); 
     font-size: 0.8rem; 
 }
+
+/* Hover Effect */
+.cv-item.has-cert {
+    position: relative;
+    cursor: help; /* Memberi tahu user bahwa elemen ini interaktif */
+    transition: 0.3s;
+}
+
+.cv-item.has-cert:hover h4 {
+    color: var(--cyan); /* Mengubah warna judul saat di-hover */
+}
+
+.cert-preview {
+    position: absolute;
+    bottom: 100%; /* Muncul tepat di atas teks */
+    left: 0;
+    width: 220px; /* Ukuran foto sertifikat */
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    
+    /* Konfigurasi Animasi Smooth */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px); /* Posisi awal sedikit ke bawah */
+    transition: all 0.3s ease-in-out;
+    z-index: 50;
+    pointer-events: none; /* Mencegah gambar berkedip saat pointer menyentuh gambar */
+}
+
+/* Aksi saat di-hover */
+.cv-item.has-cert:hover .cert-preview {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Gambar naik ke posisi normal */
+    border-color: var(--cyan); /* Border menyala warna cyan */
+}
