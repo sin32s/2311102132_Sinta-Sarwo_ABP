@@ -8,35 +8,28 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // ==========================================
   // FUNGSI 1: Logika Array 2D
-  // ==========================================
   String getArray2DText() {
     List<List<int>> array2D = [];
 
-    // Baris 1: 4 bilangan kelipatan 6
     List<int> baris1 = [];
     for (int i = 1; i <= 4; i++) baris1.add(i * 6);
     array2D.add(baris1);
 
-    // Baris 2: 5 bilangan ganjil
     List<int> baris2 = [];
     for (int i = 0; i < 5; i++) baris2.add(3 + (i * 2));
     array2D.add(baris2);
 
-    // Baris 3: 6 bilangan pangkat tiga
     List<int> baris3 = [];
     for (int i = 0; i < 6; i++) {
       baris3.add(pow(i + 4, 3).toInt());
     }
     array2D.add(baris3);
 
-    // Baris 4: 7 bilangan asli beda 7
     List<int> baris4 = [];
     for (int i = 0; i < 7; i++) baris4.add(3 + (i * 7));
     array2D.add(baris4);
 
-    // Merangkai hasil ke dalam satu String
     String result = "Isi List:\n";
     for (var baris in array2D) {
       result += " ${baris.join(' ')}\n";
@@ -44,9 +37,7 @@ class MyApp extends StatelessWidget {
     return result;
   }
 
-  // ==========================================
   // FUNGSI 2: Logika FPB
-  // ==========================================
   int hitungFPB(int a, int b) {
     while (b != 0) {
       int sisa = a % b;
@@ -61,9 +52,7 @@ class MyApp extends StatelessWidget {
     return " Bilangan 1: $bil1\n Bilangan 2: $bil2\n FPB $bil1 dan $bil2 = $fpb";
   }
 
-  // ==========================================
   // TAMPILAN UI FLUTTER
-  // ==========================================
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
