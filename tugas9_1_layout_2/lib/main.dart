@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'tutorial_11-1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -137,6 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   letterSpacing: 0.25 
                 ))
               ),
+              const SizedBox(height: 10),
               Expanded(
                 child: ListView.builder(
                   itemCount: data.length,
@@ -151,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: TextStyle(color: Colors.blue, fontSize: 20),
                             ),
                             Text(
-                              data[index]["tgl"]! + '\n' + data[index]['nilai']!, 
+                              '${data[index]["tgl"]!}\n${data[index]['nilai']!}', 
                               style: const TextStyle(color: Colors.blue, fontSize: 20),
                             ),
                           ],
@@ -162,6 +164,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   } 
                 )
               ),
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 30),
+                child: InkWell(
+                  child: const Text(
+                    'Go to Tutorial 11-1',
+                    style: TextStyle(
+                      color: Colors.indigo,
+                      fontSize: 26,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const MyApp11_1()),
+                    );
+                  },
+                ),
+              ),
+
             ],
           ),
         ),
