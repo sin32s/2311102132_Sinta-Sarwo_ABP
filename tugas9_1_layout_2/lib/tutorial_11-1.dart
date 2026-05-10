@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'main.dart'; 
+import 'main.dart';
+import 'tutorial_11-2.dart';
 
 class MyApp11_1 extends StatefulWidget {
   const MyApp11_1({super.key});
@@ -29,14 +30,14 @@ class _MyApp11_1State extends State<MyApp11_1> {
               child: InkWell(
                 child: const Text('Go to Home page', style: TextStyle(fontSize: 30)),
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const MyApp()));
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => const MyApp()
+                    ));
                 },
               ),
             ),
             // Halaman 2 - Email
-            const Center(
-              child: Text('Email page', style: TextStyle(fontSize: 30)),
-            ),
+            MyApp11_2(),
             // Halaman 3 - Profile
             const Center(
               child: Text('Profile page', style: TextStyle(fontSize: 30)),
